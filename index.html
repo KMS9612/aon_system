@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./color_pallete.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>AON System</title>
   </head>
+
   <body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 600,
+        easing: "ease-in-out", // 이징 함수 설정
+        once: false, // 스크롤 시 한 번만 애니메이션 실행
+      });
+    </script>
     <!-- Box_1 -->
     <header class="header_box">
       <!-- Navigation -->
@@ -36,20 +46,136 @@
             <button class="bottom_btn">Join Us</button>
           </div>
         </div>
+        <div class="header_img_box" data-aos="fade-in">
+          <img src="/content_01.png" alt="" />
+        </div>
       </div>
     </header>
     <!-- Box_1 End -->
 
     <!-- Box_2 -->
-    <main class="main_box">
-      <div class="main_top"></div>
+    <main class="main_box" data-aos="fade-up">
+      <div class="main_top">
+        <div class="main_top_title">Our Services</div>
+        <div class="main_top_subText">
+          I'm a paragraph. Click here to add your own text and edit me.<br />
+          It’s easy. Just click “Edit Text” or double click me to add your
+          own<br />
+          content and make changes to the font. I’m a great place for you to<br />
+          tell a story and let your users know a little more about you.
+        </div>
+      </div>
       <div class="main_bottom">
-        <img src="#" alt="" />
-        <img src="#" alt="" />
-        <img src="#" alt="" />
+        <div class="main_img_box">
+          <img src="/content_03.jpg" alt="" />
+          <span class="img_subText">Stock<br />Trading</span>
+        </div>
+        <div class="main_img_box">
+          <img src="/content_04.jpg" alt="" />
+          <span class="img_subText"
+            >E-Learning<br />
+            Platform</span
+          >
+        </div>
+        <div class="main_img_box">
+          <img src="/content_05.jpg" alt="" />
+          <span class="img_subText"
+            >Investment<br />
+            Banking</span
+          >
+        </div>
       </div>
     </main>
+    <!-- Box_2 End -->
 
     <!-- Box_3 -->
+    <div class="box_3_wrapper">
+      <img class="gray_rect" src="/sub_bg_rect_01.png"></img>
+      <div class="box_3_left" data-aos="fade-up">
+        <img src="/content_02.png" alt="" />
+      </div>
+      <div class="box_3_right">
+        <div class="right_top" data-aos="fade-up">
+          <span>How It Works</span>
+        </div>
+        <div class="right_bottom">
+          <div class="subtitle_box" data-aos="fade-up">
+            <img src="/svg_icon_01.png" alt="">
+            <p class="right_subtitle">Online Bank System</p>
+            <p>I'm a paragraph. Click here to add<br/>
+              your own text and edit me. It’s<br/>
+               easy. Just click “Edit Text” or<br/>
+                double click me to add your own<br/>
+                 content and make changes to the <br/>
+                 font.</p>
+          </div>
+          <div class="subtitle_box" data-aos="fade-up">
+            <img src="/svg_icon_02.png" alt="">
+            <p class="right_subtitle">Call Us & Trade</p>
+            <p>
+              I'm a paragraph. Click here to add<br/>
+              your own text and edit me. It’s<br/>
+               easy. Just click “Edit Text” or<br/>
+                double click me to add your own<br/>
+                 content and make changes to the <br/>
+                 font.
+            </p>
+          </div>
+          <div class="subtitle_box" data-aos="fade-up">
+            <img src="/svg_icon_03.png" alt="">
+            <p class="right_subtitle">Trade at Our Office</p>
+            <p>I'm a paragraph. Click here to add<br/>
+              your own text and edit me. It’s<br/>
+               easy. Just click “Edit Text” or<br/>
+                double click me to add your own<br/>
+                 content and make changes to the <br/>
+                 font.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Box_3 End -->
+
+    <!-- Box_4 -->
+    <div class="box_4_wrapper">
+      <div class="box_4_subtitle" data-aos="fade-up">
+        Why Choose Us
+      </div>
+      <div class="box_4_menu">
+        <div class="row">
+          <div class="menu_items" data-aos="fade-up">15+ Years of Experience</div>
+          <div class="menu_items" data-aos="fade-up">Certified Professional Traders</div>
+          <div class="menu_items" data-aos="fade-up">Easy & Simple Trading Tools</div>
+        </div>
+        <div class="row">
+          <div class="menu_items" data-aos="fade-up">Data-driven Trading System</div>
+          <div class="menu_items" data-aos="fade-up">Over 2,000 Satisfied Clients</div>
+          <div class="menu_items" data-aos="fade-up">Constantly Evolving</div>
+        </div>
+      </div>
+    </div>
+    <!-- Box_4 End -->
+
+    <!-- Box_5 -->
+    <div class="box_5_wrapper">
+      <img class="gray_rect" src="/sub_bg_rect_01.png"></img>
+      <div class="box_5_text" data-aos="fade-up"> 
+        <p class='box_5_subtitle'>Plans & Pricing</p>
+        <p>A RANGE OF OPPORTUNITIES TO SUIT EVERY CLIENT</p>
+        <button class="box_5_button">Learn More</button>
+      </div>
+    </div>
+    <!-- Box_5 End -->
+
+    <!-- Box_6 -->
+    <div class="box_6_wrapper"></div>
+    <!-- Box_6 End -->
+
+    <!-- Box_7 -->
+    <div class="box_7_wrapper">
+      <div class="box_7_left"></div>
+      <div class="box_7_right"></div>
+    </div>
+    <!-- Box_7 End -->
   </body>
 </html>
