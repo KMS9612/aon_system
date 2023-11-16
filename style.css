@@ -75,11 +75,12 @@
 }
 
 .header_main {
-  width: 70%;
+  width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 150px;
 }
 
 .header_text_box {
@@ -88,18 +89,24 @@
 
 .header_text_top {
   margin-bottom: 150px;
-  font-size: 52px;
+  font-size: 58px;
+  font-weight: 400;
 }
 
 .header_text_bottom {
-  width: 300px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.header_text_bottom > div {
+  font-weight: 400;
+  font-size: 20px;
+}
+
 .bottom_btn {
-  width: 200px;
+  width: 282px;
   height: 60px;
   margin-top: 30px;
   background-color: transparent;
@@ -126,11 +133,14 @@
   margin-bottom: 100px;
 }
 .main_top_title {
-  font-size: 32px;
+  margin-bottom: 32px;
+  font-size: 37px;
+  font-weight: 400;
   color: var(--main-title);
 }
 .main_top_subText {
-  font-size: 13px;
+  text-align: center;
+  font-size: 16px;
   font-weight: 300;
   color: var(--main-title-gray);
 }
@@ -144,7 +154,7 @@
 
 .main_img_box {
   position: relative;
-  height: 400px;
+  height: 500px;
   margin-right: 50px;
   display: flex;
   flex-direction: column;
@@ -154,7 +164,7 @@
 
 .img_subText {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--main-title-gray);
 }
 
@@ -163,15 +173,10 @@
   position: absolute;
   top: 87%;
   left: 0;
-  width: 60%;
-  height: 1px;
+  width: 234px;
+  height: 2px;
   background-color: #002279;
   transform: translateY(-50%);
-}
-
-.main_img_box > img {
-  width: 300px;
-  height: 320px;
 }
 
 .gray_rect {
@@ -183,16 +188,16 @@
 .box_3_wrapper {
   position: relative;
   width: 100%;
-  padding-left: 200px;
+  min-width: 1440px;
+  margin: 0 auto;
   height: 600px;
   background-color: #3d3c4e;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  gap: 130px;
 }
-.box_3_left {
-  margin-right: 220px;
-}
+
 .box_3_right {
   display: flex;
   flex-direction: column;
@@ -204,15 +209,17 @@
   margin-bottom: 80px;
 }
 .right_top > span {
-  border: 700;
-  font-size: 32px;
+  border: 400;
+  font-size: 37px;
 }
 .right_bottom {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
 }
 
 .subtitle_box {
-  margin-right: 90px;
   position: relative;
 }
 
@@ -236,6 +243,11 @@
   font-size: 17px;
 }
 
+.box3_right_subtext {
+  font-size: 15px;
+  font-weight: 400;
+}
+
 .box_4_wrapper {
   height: 600px;
   background-color: #fff;
@@ -248,8 +260,8 @@
 
 .box_4_subtitle {
   color: var(--main-title);
-  font-weight: 500;
-  font-size: 32px;
+  font-weight: 400;
+  font-size: 37px;
 }
 
 .box_4_menu {
@@ -274,11 +286,12 @@
   display: flex;
   text-align: center;
   font-weight: 300;
+  font-size: 16px;
 }
 .menu_items::before {
   content: "";
   position: absolute;
-  top: -70%;
+  top: -90%;
   left: 0;
   width: 100%;
   height: 1px;
@@ -303,15 +316,22 @@
   color: var(--main-white);
 }
 .box_5_subtitle {
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 37px;
+  font-weight: 400;
+}
+
+.box_5_subtext {
+  font-size: 17px;
+  font-weight: 400;
 }
 
 .box_5_button {
-  width: 200px;
-  height: 60px;
+  width: 260px;
+  height: 74px;
   margin-top: 30px;
   background-color: transparent;
+  font-size: 20px;
+  font-weight: 400;
   color: var(--main-text);
   border: 1px solid var(--main-text);
   cursor: pointer;
@@ -360,7 +380,8 @@
 }
 
 .left_one_subText {
-  font-size: 14px;
+  font-weight: 300;
+  font-size: 15px;
   color: var(--main-title-gray);
 }
 
@@ -370,7 +391,8 @@
   justify-content: center;
   align-items: center;
   color: var(--main-title);
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -393,12 +415,13 @@
 }
 
 .title {
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 16px;
   color: var(--main-title);
 }
 .left_two_subtext {
-  font-size: 14px;
+  font-weight: 300;
+  font-size: 15px;
   color: var(--main-title-gray);
 }
 
@@ -423,7 +446,8 @@
   gap: 15px;
 }
 .right_form_title {
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 16px;
   color: var(--main-title);
 }
 .form_first_box {
@@ -440,8 +464,8 @@
 }
 
 .input_label {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   color: var(--main-title);
   margin-bottom: 20px;
 }
