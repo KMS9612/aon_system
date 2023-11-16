@@ -161,12 +161,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 }
 
 .main_img_box {
   position: relative;
   height: 500px;
-  margin-right: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
