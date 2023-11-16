@@ -27,7 +27,7 @@
 
 .nav_box {
   width: 90%;
-  height: 100px;
+  height: 144px;
   padding: 30px;
   display: flex;
   justify-content: space-between;
@@ -38,10 +38,12 @@
 .nav_left {
   position: relative;
   height: 100%;
+  padding-left: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-weight: 700;
   font-size: 12px;
   color: var(--main-title);
   cursor: pointer;
@@ -50,6 +52,10 @@
 .nav_text1 {
   font-weight: 700;
   text-align: right;
+}
+
+.nav_text2 {
+  font-weight: 400;
 }
 
 .devide_line {
@@ -80,7 +86,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 150px;
+  gap: 100px;
 }
 
 .header_text_box {
