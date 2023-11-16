@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./res_1280.css" />
+    <link rel="stylesheet" href="./res_mobile.css" />
     <link rel="stylesheet" href="./color_pallete.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>AON System</title>
-  </head>
-
-  <body id="body_wrap">
     <script src="./main.js" type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>AON System</title>
+  </head>
+
+  <body id="body_wrap">
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -43,14 +46,15 @@
         <div class="header_text_box">
           <div class="header_text_top">
             AON System<br />
-            Automatic trading solution
+            Automatic trading
+            solution
           </div>
           <div class="header_text_bottom">
             <div>TURNING YOUR VISION INTO PROFIT</div>
             <button class="bottom_btn">Join Us</button>
           </div>
         </div>
-        <div class="header_img_box" data-aos="fade-in">
+        <div class="header_img_box mobile_none" data-aos="fade-in">
           <img src="/content_01.png" alt="" />
         </div>
       </div>
@@ -95,7 +99,7 @@
     <!-- Box_3 -->
     <div class="box_3_wrapper">
       <img class="gray_rect" src="/sub_bg_rect_01.png"></img>
-      <div class="box_3_left" data-aos="fade-up">
+      <div class="box_3_left none" data-aos="fade-up">
         <img src="/content_02.png" alt="" />
       </div>
       <div class="box_3_right">
@@ -146,12 +150,12 @@
         Why Choose Us
       </div>
       <div class="box_4_menu">
-        <div class="row">
+        <div class="row row1">
           <div class="menu_items" data-aos="fade-up">15+ Years of Experience</div>
           <div class="menu_items" data-aos="fade-up">Certified Professional Traders</div>
           <div class="menu_items" data-aos="fade-up">Easy & Simple Trading Tools</div>
         </div>
-        <div class="row">
+        <div class="row row2">
           <div class="menu_items" data-aos="fade-up">Data-driven Trading System</div>
           <div class="menu_items" data-aos="fade-up">Over 2,000 Satisfied Clients</div>
           <div class="menu_items" data-aos="fade-up">Constantly Evolving</div>
@@ -177,6 +181,7 @@
 
     <!-- Box_7 -->
     <div class="box_7_wrapper">
+      <!-- 7_left -->
       <div class="box_7_left" data-aos="fade-up">
         <div class="left_one">
           <div class="left_one_box">
@@ -189,10 +194,7 @@
               little more about you.
             </div>
           </div>
-          <div class="left_top_button">
-            <img src="/top_icon_01.png" alt="">
-            <p>Back to Top</p>
-          </div>
+          
         </div>
         <div class="left_two">
           <div class="left_text_box">
@@ -216,14 +218,12 @@
               </p>
             </div>
           </div>
-          <div class="left_icon_box">
-            <img src="/icon_04.png" alt="">
-            <img src="/icon_03.png" alt="">
-            <img src="/icon_02.png" alt="">
-            <img src="/icon_01.png" alt="">
-          </div>
+          
         </div>
       </div>
+      <!-- 7_left End -->
+
+      <!-- 7_right -->
       <div class="box_7_right" data-aos="fade-up">
         <span class="right_form_title">Contact Us</span>
         <div class="form_first_box">
@@ -248,6 +248,26 @@
           <button class="submit_button" type="button">Submit</button>
         </div>
       </div>
+      <!-- 7_right End -->
+
+      <!-- 7_bottom -->
+      <div class="box_7_bottom">
+        <div class="left_top_button" data-aos="fade-up">
+          <div class="image_wrapping">
+            <img src="/top_icon_01.png" alt="">
+          </div>
+          <p>Back to Top</p>
+        </div>
+        <div class="left_icon_box" data-aos="fade-up">
+          <img src="/icon_04.png" alt="">
+          <img src="/icon_03.png" alt="">
+          <img src="/icon_02.png" alt="">
+          <img src="/icon_01.png" alt="">
+        </div>
+      </div>
+      <!-- 7_bottom End -->
+      <!-- empty for grid -->
+      <div class="empty_grid"></div>
     </div>
     <!-- Box_7 End -->
     <!-- Footer -->

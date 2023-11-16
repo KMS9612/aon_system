@@ -9,7 +9,6 @@
 
 .body {
   width: 100vw;
-
   height: 100vh;
 }
 
@@ -30,6 +29,7 @@
 
 .nav_box {
   width: 90%;
+  margin: 0 auto;
   height: 144px;
   padding: 30px;
   display: flex;
@@ -100,6 +100,9 @@
   margin-bottom: 150px;
   font-size: 58px;
   font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .header_text_bottom {
@@ -153,6 +156,7 @@
   text-align: center;
   font-size: 16px;
   font-weight: 300;
+  line-height: 24px;
   color: var(--main-title-gray);
 }
 
@@ -287,18 +291,18 @@
 }
 
 .row {
-  width: 80%;
+  width: fit-content;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 90px;
+  gap: 90px;
 }
 
 .menu_items {
   position: relative;
-  min-width: 23%;
+  min-width: 222px;
   display: flex;
-  text-align: center;
   font-weight: 300;
   font-size: 16px;
 }
@@ -307,7 +311,7 @@
   position: absolute;
   top: -90%;
   left: 0;
-  width: 100%;
+  width: 250px;
   height: 1px;
   background-color: var(--main-title);
 }
@@ -370,17 +374,22 @@
   min-width: 1440px;
   margin: 0 auto;
   height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 400px 100px;
+  grid-template-areas:
+    "left right"
+    "bottom empty";
   background-color: #eaeaea;
 }
 
 .box_7_left {
-  width: 50%;
+  padding-top: 150px;
+  width: 100%;
+  grid-area: left;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 100px;
 }
 
@@ -407,14 +416,21 @@
 }
 
 .left_top_button {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color: var(--main-title);
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
+}
+.image_wrapping {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .left_two {
@@ -447,6 +463,7 @@
 }
 
 .left_icon_box {
+  width: 50%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -458,12 +475,13 @@
 }
 
 .box_7_right {
+  padding-top: 150px;
+  grid-area: right;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 50%;
-  height: 400px;
+  width: 100%;
   gap: 15px;
 }
 .right_form_title {
@@ -523,6 +541,19 @@
   font-size: 19px;
   color: var(--main-title);
   cursor: pointer;
+}
+
+.box_7_bottom {
+  width: 100%;
+  grid-area: bottom;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 100px;
+}
+.empty_grid {
+  grid-area: empty;
 }
 
 footer {
