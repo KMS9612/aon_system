@@ -30,6 +30,7 @@
   }
 
   .main_box {
+    min-height: 893px;
   }
   .main_img_box {
     height: 390px;
