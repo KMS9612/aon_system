@@ -530,6 +530,7 @@
   resize: none;
   border: 1px solid var(--main-title);
   outline-color: var(--main-title);
+  vertical-align: top;
 }
 
 .submit_button {
@@ -554,6 +555,7 @@
 }
 .empty_grid {
   grid-area: empty;
+  display: none;
 }
 
 footer {
