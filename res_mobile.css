@@ -34,6 +34,7 @@
 
   .header_text_top {
     width: 100%;
+    margin-bottom: 20px;
     font-weight: 400;
     font-size: 26px;
     white-space: nowrap;
@@ -41,11 +42,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .header_text_top br {
     display: block;
   }
 
+  .header_text_bottom > div {
+    font-size: 12px;
+  }
   .main_box {
     padding: 50px 0;
     min-width: 0;
