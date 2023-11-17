@@ -14,7 +14,6 @@ const navItem = document.querySelectorAll(".nav_item");
 navItem[0].addEventListener("click", function () {
   const target = document.querySelector(".header_box");
   const rect = target.offsetTop;
-  console.log(rect);
   window.scrollTo({
     top: rect,
     behavior: "smooth",
@@ -23,7 +22,6 @@ navItem[0].addEventListener("click", function () {
 navItem[1].addEventListener("click", function () {
   const target = document.querySelector(".main_box");
   const rect = target.offsetTop;
-  console.log(rect);
   window.scrollTo({
     top: rect,
     behavior: "smooth",
